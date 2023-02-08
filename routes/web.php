@@ -17,11 +17,3 @@ use App\Http\Controllers\EmployeeController;
 Route::get('/', [EmployeeController::class, 'showEmployees']);
 
 Route::get('/employee/pdf', [EmployeeController::class, 'createPDF']);
-
-Route::get('/welcome', function() {
-    return view('welcome');
-});
-
-Route::get('/user/{id}', function($id) {
-    return "User : $id";
-});
